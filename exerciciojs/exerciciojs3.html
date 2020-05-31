@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hello, world!</title>
+    <script src="exerciciojs3.js"></script>
+
+    <style>
+        p{
+            width: 80%;
+            text-align: justify;
+            margin: 0 auto;
+        }
+
+        h1{
+            font-size: 32px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            margin-top: 5%;
+        }
+
+        table{
+            width: 80%;
+        }
+        th,td {
+            padding: 20px;
+            text-align: center;
+        }
+
+        button{
+          margin: 10px;
+          background-color: navy;
+          color: white;
+          padding: 5px;
+
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <article>
+            <section>
+                <h1>Mercado Bitcoin</h1>
+                <p>Essa página descreve a API de Dados, uma forma automatizada de obter os dados de negociações do
+                    Mercado Bitcoin, em geral de uso de desenvolvedores de software que desejam integrar essas
+                    informações a outros sistemas. Por esse motivo, os métodos têm CORS configurado de maneira a
+                    permitir chamadas de outros domínios. A documentação abaixo descreve, com exemplos, como utilizar a
+                    interface de dados.</p>
+                <section>
+                    <section>
+                        <button onclick="tabela()">Histórico de negociações realizadas.</button>
+                        <table>
+                            <tr>
+                                <th>Data</th>
+                                <th>Preço</th>
+                                <th>Quantidade</th>
+                            </tr>
+                            <tr>
+                                <td id="dia"></td>
+                                <td id="preco"></td>
+                                <td id="quantidade"></td>
+                                <td id="id"></td>
+                                <td id="tipo"></td>
+                            </tr>
+                            <tr>
+
+                        </table>
+                    </section>
+        </article>
+    </main>
+
+</body>
+
+</html>
